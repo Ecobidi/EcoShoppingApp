@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.obidi.eco_shopping_mall.models.CartItem" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cart_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:paddingEnd="0dp">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@{item.product.name}"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/product_image"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Forbes"/>
+
+            <TextView
+                android:id="@+id/product_selling_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text='@{"$" + String.valueOf(item.product.sellingPrice)}'
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/product_name"
+                app:layout_constraintTop_toBottomOf="@+id/product_name"
+                tools:text="$10"/>
+
+            <TextView
+                android:id="@+id/product_regular_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/text_strikethrough"
+                android:paddingEnd="2dp"
+                android:paddingStart="2dp"
+                android:text='@{"$" + String.valueOf(item.product.regularPrice)}'
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/product_selling_price"
+                app:layout_constraintStart_toEndOf="@+id/product_selling_price"
+                app:layout_constraintTop_toTopOf="@+id/product_selling_price"
+                tools:text="$9"/>
+
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="@dimen/list_item_image_width"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/construction"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/remove_cart_item_button"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/qty_increment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cart_qty_inc_button"
+                android:text="@string/plus_symbol"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/product_name"
+                app:layout_constraintTop_toBottomOf="@+id/product_selling_price"/>
+
+            <Button
+                android:id="@+id/qty_decrement"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/cart_qty_inc_button"
+                android:text="@string/minus_symbol"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/qty_increment"
+                app:layout_constraintStart_toEndOf="@+id/quantity"
+                app:layout_constraintTop_toTopOf="@+id/qty_increment"/>
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text='@{String.valueOf(item.quantity)}'
+                android:textColor="@color/light_black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/qty_increment"
+                app:layout_constraintStart_toEndOf="@+id/qty_increment"
+                app:layout_constraintTop_toTopOf="@+id/qty_increment"
+                tools:text="1"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</layout>

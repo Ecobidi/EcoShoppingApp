@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/my_account">
+        <menu>
+            <group>
+                <item android:id="@+id/home"
+                      android:title="@string/home_title"
+                      android:icon="@drawable/ic_home" />
+                <item android:id="@+id/profile"
+                      android:title="@string/profile_title"
+                      android:icon="@drawable/ic_person_24dp" />
+                <item android:id="@+id/wishlist"
+                      android:title="@string/wishlist_title"
+                      android:icon="@drawable/ic_favorite_24dp" />
+                <item android:id="@+id/cart"
+                      android:title="@string/cart_title"
+                      android:icon="@drawable/ic_shopping_cart_24dp" />
+                <item android:id="@+id/order"
+                      android:title="@string/order_title"
+                      android:icon="@drawable/ic_list_24dp" />
+                <item android:id="@+id/category"
+                      android:title="@string/categories_title"
+                      android:icon="@drawable/ic_library_books_24dp" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Support">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@+id/faq"
+                  android:title="FAQ"
+                  android:icon="@drawable/ic_public_24dp" />
+            <item android:id="@+id/email"
+                  android:title="Email"
+                  android:icon="@drawable/ic_email_24dp" />
+            <item android:id="@+id/phone"
+                  android:title="Phone"
+                  android:icon="@drawable/ic_phone_24dp" />
+        </menu>
+    </item>
+</menu>

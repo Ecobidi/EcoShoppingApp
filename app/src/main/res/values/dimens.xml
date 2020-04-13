@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_image_height">100dp</dimen>
+    <dimen name="list_item_image_width">84dp</dimen>
+    <dimen name="image_slider_height">150dp</dimen>
+</resources>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Eco Mall</string>
+
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="not_a_member">Not a member?</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="email_hint">E-mail</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="username">Username</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="choose_gender">Choose Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="view_all">View All</string>
+    <string name="welcome">Welcome</string>
+    <string name="fill_form_label">Fill in the form to continue</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="plus_symbol">+</string>
+    <string name="minus_symbol">-</string>
+    <string name="shop_by_category">Shop by Category</string>
+    <string name="description">Description</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="add_to_wish">Add To WishList</string>
+    <string name="empty_cart">Your cart is empty</string>
+    <string name="shop_now">Shop Now</string>
+    <string name="place_order">Place Order</string>
+    <string name="total">Total</string>
+
+    <string name="home_title">Home</string>
+    <string name="cart_title">Cart</string>
+    <string name="wishlist_title">WishList</string>
+    <string name="profile_title">Profile</string>
+    <string name="order_title">Orders</string>
+    <string name="categories_title">Categories</string>
+    <string name="product_detail_title">Product Details</string>
+    <string name="my_account">My Account</string>
+
+    <string name="added_to_cart">Added to Cart</string>
+    <string name="added_to_wishlist">Added to WishList</string>
+    <string name="empty_list_title">List is empty</string>
+</resources>
